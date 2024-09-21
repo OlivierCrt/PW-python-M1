@@ -103,29 +103,50 @@ def max_word_Categorie(categorie,dictio) :
             max_word=word
     return max_word,max_value
 
+#Sequences n-gram
+
+#1) Not pretreated text
+def n_gram_list_create(n , text_p) :
+    dict_res=dict()# {word(0) : [next word(1) , next word(n)}
+    text_temp = text_p
+    for ch in [',','.',';','!','?',':',"'",'-','(',')','/','*','[',']'] :
+        if ch in text_temp :
+            text_temp =text_temp.replace(ch," ")
+
+    text_temp = text_temp.lower()
+    text_temp = text_temp.split() 
+    for i in range (len(text_temp)-n+1) :
+
+        if text_temp[i] not in dict_res :
+            dict_res[text_temp[i]]=text_temp[i+1:i+n]
+            
+        else:
+           dict_res[text_temp[i]].append(text_temp[i+1:i+n])
+
+    return dict_res
+
+
+print(n_gram_list_create(3,text))
+
+
+    
+    
 
 
 
-#Test 21/09
-d =create_dict(text_pretreated)
+
+
+
+
+
+
+#Test pretreated text
+'''d =create_dict(text_pretreated)
 print("Max word in categorie PP :")
 print(max_word_Categorie('PP',d))
 print("Number of occurences of 'Alice':")
 print(wordCount_Word('Alice',d))
 print("Words for NP categorie: ")
-print(wordCount_Categorie('NP',d))
-
-
-
-
-
-
-
-
-'''
-dictio= wordCount(text)
-print( maxValueInDict(dictio) )
-print( top10values(dictio))
-'''
+print(wordCount_Categorie('NP',d))'''
 
 
