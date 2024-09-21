@@ -77,6 +77,7 @@ class Graph :
                 deja_vu.append(current_node)
             neighbour= self.getDict()[current_node]
 
+
             for i in neighbour :
                 if i not in deja_vu :
                     stack.push(i)
