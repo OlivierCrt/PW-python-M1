@@ -126,7 +126,7 @@ def n_gram_list_create(n , text_p) :
     return dict_res
 
 
-print(n_gram_list_create(3,text))
+print(n_gram_list_create(5,text))
 
 
     
