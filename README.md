@@ -15,3 +15,21 @@ This first practical assignment aims to introduce the basic concepts of Natural 
 
 ### Description
 This second practical assignment focuses on the principles of Object-Oriented Programming.
+
+### Content
+- Understanding classes and objects.
+- Implementing inheritance and polymorphism.
+- Utilizing encapsulation and abstraction.
+- Creating simple applications using OOP principles.
+
+## TP3: Data Classification and Visualization
+
+### Description
+This third practical assignment aims to explore data classification techniques and visualization methods using Python.
+
+### Content
+- Implementing classifiers for different data types.
+- Understanding the importance of data preprocessing.
+- Visualizing data distributions and classification results.
+- Evaluating classifier performance and accuracy metrics.
+- Using plots to illustrate class separations and decision boundaries.
