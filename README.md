@@ -17,7 +17,7 @@ This first practical assignment aims to introduce the basic concepts of Natural 
 This second practical assignment focuses on the principles of Object-Oriented Programming.
 
 ### Content
-- Understanding classes and objects.
+- Classes and objects concepts.
 - Implementing inheritance and polymorphism.
 - Utilizing encapsulation and abstraction.
 - Creating simple applications using OOP principles.
